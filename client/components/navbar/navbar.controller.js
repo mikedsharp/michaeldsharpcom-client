@@ -4,7 +4,19 @@ angular.module('michaeldsharpcomApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',
-      'link': '/'
+      'link': '/home'
+    },
+    {
+      'title': 'About',
+      'link': '/about'
+    },
+    {
+      'title': 'Projects',
+      'link': '/projects'
+    },
+    {
+      'title': 'Contact',
+      'link': '/contact'
     }];
 
     $scope.isCollapsed = true;
