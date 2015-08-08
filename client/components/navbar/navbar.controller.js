@@ -4,7 +4,7 @@ angular.module('michaeldsharpcomApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',
-      'link': '/home'
+      'link': '/'
     },
     {
       'title': 'About',
