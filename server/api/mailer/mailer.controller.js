@@ -12,17 +12,17 @@ exports.create = function(req, res) {
   var transporter = nodemailer.createTransport({
     service: 'Hotmail',
     auth: {
-        user: '',
-        pass: ''
+        user: process.env.EMAIL_LOGIN,
+        pass: process.env.EMAIL_PASSWORD
     }
 });
 
 //remove details
 var mailOptions = {
-    from: '', // sender address
-    to: '', // list of receivers
-    subject: '', // Subject line
-    text: '' // plaintext body
+    from:  process.env.EMAIL_LOGIN, // sender address
+    to:  process.env.EMAIL_LOGIN, // list of receivers
+    subject: 'A user query from michaeldsharp.com', // Subject line
+    text: 'the message' // plaintext body
 };
 
 transporter.sendMail(mailOptions, function(error, info){
