@@ -3,15 +3,18 @@
 angular.module('michaeldsharpcomApp')
   .controller('ContactMailformCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.message = 'Hello';
-	
+
 	$scope.mail = {
-		email : '', 
-		name: '', 
+		email : '',
+		name: '',
 		message : ''
 	};
 
+  $scope.pendingSend = true;
+
     $scope.sendEmail = function() {
 
+      $scope.pendingSend = false;
       // let the API know that we want these tags
       $http({
         withCredentials: false,
@@ -21,15 +24,17 @@ angular.module('michaeldsharpcomApp')
           'Content-Type': 'application/json'
         },
         data: $scope.mail
-		
+
       }).success(function(response) {
-	  
+
 		$scope.mail = {
-			email : '', 
-			name: '', 
+			email : '',
+			name: '',
 			message : ''
 		};
-      
+
+
+
 	  });
 
     };
