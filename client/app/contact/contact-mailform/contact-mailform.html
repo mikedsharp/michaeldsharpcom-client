@@ -1,6 +1,25 @@
 <div ng-controller="ContactMailformCtrl">
-  this is the contactMailform directive {{message}}
-
-        <button type="button" class="btn btn-default btn-lg" ng-click="sendEmail()">Click Me</input>
-
+    <div class ="container">
+		<div class="row">
+		Please feel free to send me a message and I will try to get back to you as soon as I can. 
+		</div>
+	</div>
+	<div class="container">
+		<form nonvalidate class="">
+		
+				<div class="row">
+					Email Address: <input type="email" ng-model="mail.email" ng-minlength=6 ng-maxlength=255 />
+				</div> 
+				<div class="row">
+					Name (optional): <input type="email" ng-model="mail.name" ng-minlength=2 ng-maxlength=255 />
+				</div> 
+				<div class="row">
+					Your Message: <textarea ng-model="mail.message" ng-minlength=5 ng-maxlength=255 />
+				</div> 
+				<div class="row">
+					<input type="submit" class="btn btn-default btn-lg" ng-click="sendEmail()">Send</input>
+				</div>
+		</form>
+	</div>
+	
 </div>

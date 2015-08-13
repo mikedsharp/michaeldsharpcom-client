@@ -3,7 +3,12 @@
 angular.module('michaeldsharpcomApp')
   .controller('ContactMailformCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.message = 'Hello';
-
+	
+	$scope.mail = {
+		email : '', 
+		name: '', 
+		message : ''
+	};
 
     $scope.sendEmail = function() {
 
@@ -15,14 +20,18 @@ angular.module('michaeldsharpcomApp')
         headers: {
           'Content-Type': 'application/json'
         },
-        data: {
-
-        }
+        data: $scope.mail
+		
       }).success(function(response) {
-        console.log('tag added!');
-      });
+	  
+		$scope.mail = {
+			email : '', 
+			name: '', 
+			message : ''
+		};
+      
+	  });
 
     };
-
 
   }]);
