@@ -1,7 +1,7 @@
 <div ng-controller="ContactMailformCtrl">
 	<div class="container padT-10" ng-show="pendingSend">
 		<div class="row col-md-12 padB-10">
-			Please feel free to send me a message and I will try to get back to you as soon as I can.
+			Please feel free to send me a message and I will get back to you as soon as I can.
 		</div>
 		<form nonvalidate>
 
@@ -9,11 +9,11 @@
 				Email
 				<input type="email" ng-model="mail.email" ng-minlength=6 ng-maxlength=255 class="form-control" placeholder="Email">
 			</div>
-			<div class="row padB-10">
+			<div class="row col-md-12 padB-10">
 				Name (optional):
 				<input type="text" ng-model="mail.name" ng-minlength=2 ng-maxlength=255 class="form-control" placeholder="Name/Nickname" />
 			</div>
-			<div class="row padB-10">
+			<div class="row col-md-12 padB-10">
 				Your Message:
 				<textarea ng-model="mail.message" ng-minlength=5 ng-maxlength=255 class="form-control" placeholder="Your Message"> </textarea>
 			</div>
