@@ -16,6 +16,38 @@
    padding-left: 0;
 }
 
+.image-container {
+    position: relative;
+}
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: inherit;
+
+}
+
+.image-container .after span {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+
+.image-container:hover .after {
+    display: block;
+    cursor:pointer;
+    background: rgba(0, 0, 0, .7);
+}
+
+
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .row.no-gutters img {

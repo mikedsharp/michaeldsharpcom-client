@@ -9,7 +9,13 @@
 <div class="container">
   <div class="row text-center no-gutters">
     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="project in projects">
-      <img class="img-responsive" ng-src="../../assets/images/projects/{{project.images.gallery.imageThumbUrl}}" />
+      <div class="image-container">
+          <img class="img-responsive" ng-src="../../assets/images/projects/{{project.images.gallery.imageThumbUrl}}" />
+          <div class="after text-center">
+            <span>{{project.title}}</span>
+          </div>
+      </div>
+
     </div>
   </div>
 
