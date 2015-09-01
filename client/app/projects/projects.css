@@ -1,0 +1,31 @@
+/* no-gutters Class Rules */
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+
+.row.no-gutters img {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .row.no-gutters img {
+    height: 269px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .row.no-gutters img {
+    height: 213px;
+  }
+}

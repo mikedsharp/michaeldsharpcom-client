@@ -1,52 +1,132 @@
-[{
-  "title" : "Rebound",
-  "subtitle" : "A game I made for a competition",
-  "description": "look at this amazing thing I made, hahahahaha, give me money!",
-  "images" : {
-    "mainImage" : {
-      "title" : "the main image",
-      "url" : "imageurl-main.jpg"
-    },
-    "gallery": [
-      {
-        "title": "an image",
-        "imageThumbUrl" : "thing-thumb.jpg",
-        "imageLargeUrl": "thing-large.jpg"
+[
+  {
+    "title" : "Michael D Sharp.com",
+    "subtitle" : "Saturday is TREAT DAY",
+    "description": "Call now!",
+    "images" : {
+      "mainImage" : {
+        "title" : "check out my amazing deh veh duh",
+        "url" : "imageurl-main.jpg"
+      },
+      "gallery":
+        {
+          "title": "an image",
+          "imageThumbUrl" : "alien-invasion.png",
+          "imageLargeUrl": "thing-large.jpg"
+        }
+      ,
+      "links" : {
+        "title" : "link A",
+        "url": "linka.html"
+      },
+      "videos" : {
+        "title" : "video A",
+        "url" : "youtube.com/embed?thing=5"
       }
-    ],
-    "links" : [{
-      "title" : "link A",
-      "url": "linka.html"
-    }],
-    "videos" : [{
-      "title" : "video A",
-      "url" : "youtube.com/embed?thing=5"
-    }]
-  }
-},
-{
-  "title" : "Michael D Sharp.com",
-  "subtitle" : "Saturday is TREAT DAY",
-  "description": "Call now!",
-  "images" : {
-    "mainImage" : {
-      "title" : "check out my amazing deh veh duh",
-      "url" : "imageurl-main.jpg"
-    },
-    "gallery": [
-      {
-        "title": "an image",
-        "imageThumbUrl" : "thing-thumb.jpg",
-        "imageLargeUrl": "thing-large.jpg"
+    }
+  },
+  {
+    "title" : "Michael D Sharp.com",
+    "subtitle" : "Saturday is TREAT DAY",
+    "description": "Call now!",
+    "images" : {
+      "mainImage" : {
+        "title" : "check out my amazing deh veh duh",
+        "url" : "imageurl-main.jpg"
+      },
+      "gallery":
+        {
+          "title": "an image",
+          "imageThumbUrl" : "block-gameplay.png",
+          "imageLargeUrl": "thing-large.jpg"
+        }
+      ,
+      "links" : {
+        "title" : "link A",
+        "url": "linka.html"
+      },
+      "videos" : {
+        "title" : "video A",
+        "url" : "youtube.com/embed?thing=5"
       }
-    ],
-    "links" : [{
-      "title" : "link A",
-      "url": "linka.html"
-    }],
-    "videos" : [{
-      "title" : "video A",
-      "url" : "youtube.com/embed?thing=5"
-    }]
+    }
+  },
+  {
+    "title" : "Michael D Sharp.com",
+    "subtitle" : "Saturday is TREAT DAY",
+    "description": "Call now!",
+    "images" : {
+      "mainImage" : {
+        "title" : "check out my amazing deh veh duh",
+        "url" : "imageurl-main.jpg"
+      },
+      "gallery":
+        {
+          "title": "an image",
+          "imageThumbUrl" : "meteor-defence-game.png",
+          "imageLargeUrl": "thing-large.jpg"
+        }
+      ,
+      "links" : {
+        "title" : "link A",
+        "url": "linka.html"
+      },
+      "videos" : {
+        "title" : "video A",
+        "url" : "youtube.com/embed?thing=5"
+      }
+    }
+  },
+  {
+    "title" : "Michael D Sharp.com",
+    "subtitle" : "Saturday is TREAT DAY",
+    "description": "Call now!",
+    "images" : {
+      "mainImage" : {
+        "title" : "check out my amazing deh veh duh",
+        "url" : "imageurl-main.jpg"
+      },
+      "gallery":
+        {
+          "title": "an image",
+          "imageThumbUrl" : "rebound.png",
+          "imageLargeUrl": "thing-large.jpg"
+        }
+      ,
+      "links" : {
+        "title" : "link A",
+        "url": "linka.html"
+      },
+      "videos" : {
+        "title" : "video A",
+        "url" : "youtube.com/embed?thing=5"
+      }
+    }
+  },
+  {
+    "title" : "Michael D Sharp.com",
+    "subtitle" : "Saturday is TREAT DAY",
+    "description": "Call now!",
+    "images" : {
+      "mainImage" : {
+        "title" : "check out my amazing deh veh duh",
+        "url" : "imageurl-main.jpg"
+      },
+      "gallery":
+        {
+          "title": "an image",
+          "imageThumbUrl" : "programmerinprogress.png",
+          "imageLargeUrl": "thing-large.jpg"
+        }
+      ,
+      "links" : {
+        "title" : "link A",
+        "url": "linka.html"
+      },
+      "videos" : {
+        "title" : "video A",
+        "url" : "youtube.com/embed?thing=5"
+      }
+    }
   }
-}]
+]
