@@ -7,23 +7,12 @@
 </div>
 
 <div class="container">
-  <div class="row col-md-12" ng-repeat="project in projects">
-        <ul>
-          <li>
-            <h2>{{project.title}}</h2>
-          </li>
-          <li>
-            <h3>{{project.subtitle}}</h3>
-          </li>
-          <li>
-            <p>
-              {{project.description}}
-            <p>
-          </li>
-        </ul>
+  <div class="row text-center no-gutters">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" ng-repeat="project in projects">
+      <img class="img-responsive" ng-src="../../assets/images/projects/{{project.images.gallery.imageThumbUrl}}" />
+    </div>
   </div>
+
 </div>
-
-
 
 <div ng-include="'components/footer/footer.html'"></div>
