@@ -1,9 +1,29 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="container">
+<div class="container" ng-controller="ProjectsCtrl">
   <div class="row col-md-12 padB-10">
     <h2 class="text-center">Projects</h2>
   </div>
 </div>
+
+<div class="container">
+  <div class="row col-md-12" ng-repeat="project in projects">
+        <ul>
+          <li>
+            <h2>{{project.title}}</h2>
+          </li>
+          <li>
+            <h3>{{project.subtitle}}</h3>
+          </li>
+          <li>
+            <p>
+              {{project.description}}
+            <p>
+          </li>
+        </ul>
+  </div>
+</div>
+
+
 
 <div ng-include="'components/footer/footer.html'"></div>
