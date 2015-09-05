@@ -1,7 +1,8 @@
 'use strict';
 
 angular.module('michaeldsharpcomApp')
-  .config(function ($routeProvider) {
+  .config(function($routeProvider) {
+
     $routeProvider
       .when('/projects', {
         templateUrl: 'app/projects/projects.html',
