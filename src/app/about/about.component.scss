@@ -1,5 +1,7 @@
+@import '../shared/variables'; 
+
 :host {
-    background-color: green;
+    background-color: $primary-background-colour;
     display: flex; 
     flex-grow: 1;
     overflow: auto;
