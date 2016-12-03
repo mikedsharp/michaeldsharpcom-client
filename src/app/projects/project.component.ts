@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router'; 
 
 @Component({
-    selector: 'selector',
     templateUrl: 'project.component.html', 
-    styleUrls: ['project.component.scss']
+    styleUrls: ['project.component.scss'], 
+    selector:'project-view'
 })
 export class ProjectViewComponent implements OnInit {
     private paramSubscription: any; 

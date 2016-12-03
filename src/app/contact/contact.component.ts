@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'selector',
     templateUrl: 'contact.component.html', 
-    styleUrls: ['contact.component.scss']
+    styleUrls: ['contact.component.scss'], 
+    selector:'contact-view'
 })
 export class ContactViewComponent implements OnInit {
     constructor() { }

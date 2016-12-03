@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'selector',
     templateUrl: 'about.component.html', 
-    styleUrls: ['about.component.scss']
+    styleUrls: ['about.component.scss'], 
+    selector:'about-view'
 })
 export class AboutViewComponent implements OnInit {
     constructor() { }

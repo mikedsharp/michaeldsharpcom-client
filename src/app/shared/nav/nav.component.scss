@@ -1,0 +1,11 @@
+$primary-background-colour: #76A84F; 
+$secondary-background-colour: #3A423C; 
+
+$nav-bar-bg-colour: $secondary-background-colour; 
+
+:host {
+   display: flex;
+    background-color: $nav-bar-bg-colour;
+    height: 100vh;
+    width: 200px;
+}
