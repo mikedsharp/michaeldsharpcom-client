@@ -27,10 +27,16 @@ $nav-width: 160px;
             display: flex;
             align-items: center;
 
+            a {
+                    font-size: 20px;
+            }
+            .fa{
+                    font-size: 24px;
+            }
 
             a,.fa{
                 text-decoration: none;
-                font-size: 20px;
+               
                 transition: color 0.5s ease;
                 &:link{
                     color:$primary-text-colour;
