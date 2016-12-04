@@ -1,6 +1,23 @@
 :host {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-grow: 1;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header {
+        height:48px;
+        width:100%;
+        display: flex;
+        background-color: black;
+        justify-content: space-around;
+
+        img{
+            align-self: center; 
+        }
+    }
 }
 
