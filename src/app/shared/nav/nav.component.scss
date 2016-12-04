@@ -39,6 +39,7 @@ $nav-width: 160px;
             a,.fa{
                 text-decoration: none;
                 font-size: 20px;
+                transition: color 0.5s ease;
                 &:link{
                     color:$primary-text-colour;
                 }
@@ -49,8 +50,10 @@ $nav-width: 160px;
             }
             
              &:hover{
+                    
                     color:$primary-text-colour-hover;
                        a,.fa {
+                        transition: color 0.5s ease;
                         color:$primary-text-colour-hover;
                     }
              }
