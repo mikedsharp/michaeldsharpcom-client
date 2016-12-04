@@ -16,8 +16,25 @@ h1,h2,h3,h4 {
 body{
     width: 100%;
     overflow: hidden;
+    animation: fadein 2s;
 }
 
 *{
     box-sizing: border-box;
 }
+
+.centre{
+    text-align: center;
+}
+
+.content {
+  background-color: #acc4b2;  
+}
+
+home-view, about-view, contact-view, project-list-view, project-view {
+    animation: fadein 1.5s;
+}
+ @keyframes fadein {
+     from { opacity: 0; }
+     to   { opacity: 1; }
+ }

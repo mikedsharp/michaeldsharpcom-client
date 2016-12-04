@@ -1,4 +1,5 @@
 @import '../shared/variables'; 
+@import url('https://fonts.googleapis.com/css?family=Oswald|Sansita+One');
 
 :host {
     background-color: $primary-background-colour;
@@ -7,4 +8,35 @@
     overflow: auto;
     flex-direction: column;
     height: calc(100vh - #{$header-bar-height}); 
+    padding: 10px;
+    background-image: url('../../assets/macbook-splash.png');
+    background-size: cover;
+
+    .tagline{
+        margin-top: 15%;
+        display: flex; 
+        font-family: 'Sansita One'; 
+        flex-direction: column;
+        width: 480px;
+        align-self: center;
+
+        h1 {
+            margin: 10px 0;
+            font-size: 60px; 
+            font-family: 'Sansita One'; 
+            color:  #445544;
+            text-shadow: 3px 3px 2px #dcdcdc;
+        }
+
+        h2 {
+            margin: 10px 0;
+            font-family: 'Oswald'; 
+            font-size: 32px;
+            color:  #fff;
+            word-spacing: 2px;
+            text-shadow: 2px 3px 3px #353535;
+        }
+        
+    }
 }
+

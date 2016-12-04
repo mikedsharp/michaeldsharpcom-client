@@ -9,7 +9,7 @@ $nav-width: 160px;
     height: 100vh;
     flex-direction: column;
 
-    @media only screen and (min-width:480px){
+    @media only screen and (min-width:680px){
          display: flex;
     }
 
@@ -25,16 +25,6 @@ $nav-width: 160px;
             display: flex;
             align-items: center;
 
-            a{
-                order: 1;
-                text-align: right;
-                margin-left: 10px;
-            }
-            .fa{
-                order: 0;
-                width: 25px;
-
-            }
 
             a,.fa{
                 text-decoration: none;
@@ -50,7 +40,6 @@ $nav-width: 160px;
             }
             
              &:hover{
-                    
                     color:$primary-text-colour-hover;
                        a,.fa {
                         transition: color 0.5s ease;
@@ -65,7 +54,21 @@ $nav-width: 160px;
                         color:$primary-text-colour-active;
                     }
              }
-
+             
+            a{
+                &.active:not(:hover) {
+                    color:$primary-text-colour-active;
+                     .fa{
+                        color:$primary-text-colour-active;
+                     }
+                }
+                text-align: right;
+                .fa{
+                    width: 25px;
+                    margin-right: 10px;
+                }
+            }
+           
              .fa{
                  color:$primary-text-colour;
              }
