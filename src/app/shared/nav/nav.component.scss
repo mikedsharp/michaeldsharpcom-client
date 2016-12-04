@@ -1,4 +1,5 @@
 @import '../variables'; 
+@import '../fonts'; 
 
 $nav-bar-bg-colour: $secondary-background-colour; 
 $nav-width: 160px; 
@@ -18,6 +19,7 @@ $nav-width: 160px;
         padding: 0;
         list-style-type: none;
         align-self: center;
+        font-family: 'Oswald'; 
         li{
             margin: 15px auto;
             padding-left: 20px;
