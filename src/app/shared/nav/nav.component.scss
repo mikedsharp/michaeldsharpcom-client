@@ -4,10 +4,14 @@ $nav-bar-bg-colour: $secondary-background-colour;
 $nav-width: 160px; 
 
 :host {
-    display: flex;
+    display: none;
     background-color: $nav-bar-bg-colour;
     height: 100vh;
     flex-direction: column;
+
+    @media only screen and (min-width:480px){
+         display: flex;
+    }
 
     ul{
         width: $nav-width;
