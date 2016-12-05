@@ -2,42 +2,38 @@
 @import '../shared/buttons'; 
 
 :host {
-    background-color: $primary-background-colour;
-    display: flex; 
-    flex-grow: 1;
-    overflow: auto;
-    flex-direction: column;
-    height: calc(100vh - #{$header-bar-height}); 
-    padding: 10px;
+    @include ui-view;
     background-image: url('../../assets/macbook-splash.png');
     background-size: cover;
     justify-content: space-between;
 
+    $tagline-box-width: 480px;
+    $tagline-primary-heading-size: 60px; 
+    $tagline-secondary-heading-size: 32px; 
+
     .tagline{
         margin-top: 15%;
         display: flex; 
-        font-family: 'Sansita One'; 
         flex-direction: column;
-        width: 480px;
+        width: $tagline-box-width; 
         align-self: center;
 
         h1 {
             margin: 10px 0;
-            font-size: 60px; 
-            font-family: 'Sansita One'; 
+            font-size: $tagline-primary-heading-size;
+            font-family: $primary-font;
             color:  #445544;
             text-shadow: 3px 3px 2px #dcdcdc;
         }
 
         h2 {
             margin: 10px 0;
-            font-family: 'Oswald'; 
-            font-size: 32px;
+            font-family: $secondary-font; 
+            font-size: $tagline-secondary-heading-size;
             color:  #fff;
             word-spacing: 2px;
             text-shadow: 2px 3px 3px #353535;
-        }
-        
+        }   
     }
 
      .cta-box{
@@ -48,7 +44,7 @@
 
         span {
             color:  #fff;
-            font-family: 'Oswald';
+            font-family: $secondary-font;
             font-size: 18px; 
             word-spacing: 2px;
             text-shadow: 2px 3px 3px #353535;

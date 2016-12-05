@@ -1,16 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-
 /* You can add global styles to this file, and also import other style files */
 body, html {
     margin: 0;
     display: flex;
     flex-direction: row;
-    font-family: 'Noto Sans'; 
-}
-
-h1,h2,h3,h4 {
- font-family: 'Lato'; 
 }
 
 body{
@@ -31,9 +23,6 @@ body{
   background-color: #acc4b2;  
 }
 
-home-view, about-view, contact-view, project-list-view, project-view {
-    animation: fadein 1.5s;
-}
  @keyframes fadein {
      from { opacity: 0; }
      to   { opacity: 1; }

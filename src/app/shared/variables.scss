@@ -5,3 +5,23 @@ $primary-text-colour: #dcdcdc;
 $primary-text-colour-hover: #9FB5A4; 
 $primary-text-colour-active: #C0DBC7; 
 $header-bar-height: 48px;
+
+$primary-font: 'Sansita One'; 
+$secondary-font: 'Oswald'; 
+$copy-font: 'Noto Sans'; 
+
+@mixin ui-view(){
+    background-color: $primary-background-colour;
+    display: flex; 
+    flex-grow: 1;
+    overflow: auto;
+    flex-direction: column;
+    height: calc(100vh - #{$header-bar-height}); 
+    padding: 10px;
+    animation: fadein 1.5s;
+}
+
+ @keyframes fadein {
+     from { opacity: 0; }
+     to   { opacity: 1; }
+ }
