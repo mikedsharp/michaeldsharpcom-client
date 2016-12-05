@@ -1,4 +1,5 @@
 @import '../shared/variables'; 
+@import '../shared/buttons'; 
 
 :host {
     background-color: $primary-background-colour;
@@ -55,46 +56,6 @@
         }
 
         margin-bottom: 10px;
-
-     .button-more{
-        background-color: #445544;
-        height: 56px; 
-        width: 56px; 
-        border-radius: 50%; 
-        display: flex;
-        text-decoration: none; 
-        text-shadow: 2px 1px 3px #353535;
-
-        transition: background-color 0.25s ease-in;
-        box-shadow: 2px 3px 3px #353535;
-        
-        .fa{
-                transition: text-shadow 0.5s ease;
-                text-shadow: 4px 3px 4px #353535;
-                
-                display: flex; 
-                align-self: center;
-                line-height: 56px;
-                color: #C0DBC7;
-                margin:0 auto;
-        }
-
-        &:hover{
-             background-color: #556655;
-             .fa{
-                 text-shadow: 4px 3px 4px #353535;
-             }
-        }
-        &:active{
-             background-color: #778877;
-             .fa{
-                color: #A9CAB6;
-                 text-shadow: 2px 1px 3px #353535;
-             }
-        }
-
-    }
-
     }
 
 }

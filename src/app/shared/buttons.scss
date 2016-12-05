@@ -1,0 +1,45 @@
+     $fab-button-bg-colour: #445544;
+     $fab-button-bg-colour-hover: #556655;
+     $fab-button-bg-colour-active: #778877;
+     $fab-button-icon-colour: #C0DBC7;
+     $fab-button-icon-colour-active: #A9CAB6;
+     $fab-button-flare-colour: #353535;
+     $fab-button-size: 56px; 
+     $fab-icon-size: 15px; 
+
+     .mds-fab{
+        background-color: $fab-button-bg-colour;
+        height: $fab-button-size;
+        width:  $fab-button-size; 
+        border-radius: 50%; 
+        display: flex;
+        text-decoration: none; 
+        text-shadow: 2px 1px 3px $fab-button-flare-colour;
+        justify-content: center;
+        transition: background-color 0.25s ease-in;
+        box-shadow: 2px 3px 3px $fab-button-flare-colour;
+        
+        .fa{
+                transition: text-shadow 0.5s ease;
+                text-shadow: 4px 3px 4px $fab-button-flare-colour;
+                font-size: $fab-icon-size; 
+                display: flex; 
+                align-self: center;
+                line-height: $fab-button-size;
+                color:  $fab-button-icon-colour;
+        }
+
+        &:hover{
+             background-color: $fab-button-bg-colour-hover;
+             .fa{
+                 text-shadow: 4px 3px 4px $fab-button-flare-colour;
+             }
+        }
+        &:active{
+             background-color: $fab-button-bg-colour-active;
+             .fa{
+                 color: $fab-button-flare-colour;
+                 text-shadow: 2px 1px 3px $fab-button-flare-colour;
+             }
+        }
+    }
