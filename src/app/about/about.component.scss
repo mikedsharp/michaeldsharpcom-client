@@ -1,6 +1,33 @@
 @import '../shared/variables'; 
+@import '../shared/fonts'; 
 
 :host {
     @include ui-view;
+    font-family: $copy-font; 
+    color: #616161;
+    .panel {
+        margin:0 auto;
+        padding: 10px;
+    }
+    h1{
+        font-family: $primary-font;
+        color: #445544;
+        text-shadow: 3px 3px 2px #dcdcdc;
+        
+    }
+
+    h3{
+            font-family: $secondary-font; 
+            color:  #fff;
+            word-spacing: 2px;
+            text-shadow: 2px 3px 3px #353535;
+            margin: 5px 0;
+    }
+
+    p, ul {
+            line-height: 24px;
+            max-width: 540px;
+    }
+    
 }
 
