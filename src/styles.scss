@@ -8,7 +8,6 @@ body, html {
 body{
     width: 100%;
     overflow: hidden;
-    animation: fadein 2s;
 }
 
 *{
@@ -22,8 +21,3 @@ body{
 .content {
   background-color: #acc4b2;  
 }
-
- @keyframes fadein {
-     from { opacity: 0; }
-     to   { opacity: 1; }
- }
