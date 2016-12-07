@@ -12,7 +12,7 @@
         margin: 0 auto; 
         padding: 50px 75px 80px;
         background-color: #effefb; 
-        max-width: 48em;
+        
         margin-bottom: 20px;
 
     }
@@ -34,6 +34,7 @@
 
     p, ul {
             line-height: 24px;
+            max-width: 48em;
     }
     
 }
