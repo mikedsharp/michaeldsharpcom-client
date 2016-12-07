@@ -8,9 +8,13 @@
     font-family: $copy-font; 
     color: #616161;
     .panel {
-        padding: 10px;
         display: inline-block;
         margin: 0 auto; 
+        padding: 50px 75px 80px;
+        background-color: #effefb; 
+        max-width: 48em;
+        margin-bottom: 20px;
+
     }
     h1{
         font-family: $primary-font;
@@ -30,7 +34,6 @@
 
     p, ul {
             line-height: 24px;
-            max-width: 540px;
     }
     
 }
