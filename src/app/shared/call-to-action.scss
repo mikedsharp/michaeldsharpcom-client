@@ -1,0 +1,24 @@
+     @import '../shared/buttons'; 
+     @import '../shared/variables'; 
+
+     .cta-box{
+        display: block;
+       
+        span {
+            color:  #fff;
+            font-family: $secondary-font;
+            font-size: 18px; 
+            word-spacing: 2px;
+            text-shadow: 2px 3px 3px #353535;
+            margin-bottom: 8px;
+            display: flex; 
+            justify-content: center;
+        }
+
+        .mds-fab{
+            margin: 0 auto; 
+            display: flex; 
+        }
+
+        margin-bottom: 10px;
+    }
