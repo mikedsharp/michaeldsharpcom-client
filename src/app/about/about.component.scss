@@ -4,11 +4,43 @@
 
 :host {
     @include ui-view;
-    justify-content: space-between;
     font-family: $copy-font; 
     color: #616161;
+    justify-content: space-between;
+
+    .avatar{
+        background: url('../../assets/avatar.png') no-repeat; 
+        width: 162px;
+        min-height: 162px; 
+        margin: 0 auto; 
+        border-radius: 50%;
+        border: #effefb solid 4px;
+        display: flex;
+        box-shadow: 2px 3px 3px #3b3b3b;
+        margin-bottom: 10px;
+    }
+
+    .avatar-caption{
+        font-family: "Sansita One"; 
+        color: #445544;
+        text-shadow: 3px 3px 2px #dcdcdc;
+        text-align: center; 
+        font-size:1.25em;
+        max-width: 270px; 
+        margin: 0 auto; 
+        margin-bottom: 20px;
+
+        color: #fff;
+        font-family: "Oswald";
+        word-spacing: 2px;
+        text-shadow: 2px 3px 3px #353535;
+    }
+
+    .container {
+        display: flex;
+    }
     .panel {
-        display: inline-block;
+        display: inline-block; 
         margin: 0 auto; 
         padding: 50px 75px 80px;
         background-color: #effefb; 

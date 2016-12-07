@@ -15,7 +15,7 @@
         margin-top: 15%;
         display: flex; 
         flex-direction: column;
-        width: $tagline-box-width; 
+        max-width: $tagline-box-width; 
         align-self: center;
 
         h1 {
