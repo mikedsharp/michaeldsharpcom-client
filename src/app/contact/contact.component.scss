@@ -1,5 +1,6 @@
 @import '../shared/variables'; 
-
+@import '../shared/call-to-action'; 
 :host {
     @include ui-view;
+    justify-content: space-between;
 }

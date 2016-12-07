@@ -1,5 +1,12 @@
 @import '../shared/variables'; 
+@import '../shared/call-to-action'; 
 
 :host {
     @include ui-view;
+    justify-content: space-between;
+     .panel {
+        padding: 10px;
+        display: inline-block;
+        margin: 0 auto; 
+    }
 }
