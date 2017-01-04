@@ -4,7 +4,7 @@ import { Http, Response } from '@angular/http';
 @Injectable()
 export class FeedbackService {
 
-    domain = 'http://localhost:3000'; 
+    domain = 'http://api.michaeldsharp.com'; 
     endpoint = '/feedback'; 
 
     registerFeedback(liked:boolean){
