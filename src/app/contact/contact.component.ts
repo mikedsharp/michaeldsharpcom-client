@@ -1,12 +1,34 @@
 import { Component, OnInit } from '@angular/core';
+import {FeedbackService} from './feedback.service'; 
+import '../rxjs-operators';
 
 @Component({
     templateUrl: 'contact.component.html', 
     styleUrls: ['contact.component.scss'], 
+    providers: [FeedbackService],
     selector:'contact-view'
 })
 export class ContactViewComponent implements OnInit {
-    constructor() { }
+
+    feedbackResponse = null; 
+
+    constructor(private feedbackService: FeedbackService) { }
+
+    registerFeedback(feedback){
+        var feedbackResult = feedback == 'like' ? true : false; 
+        this.feedbackService
+            .registerFeedback(feedbackResult)
+            .subscribe(response => this.feedbackResponse = response, 
+            err => {
+                // Log errors if any
+                console.log(err);
+            }); 
+            
+    }
+
+    onSuccess(res:any){
+        console.log(res); 
+    }
 
     ngOnInit() { }
 }

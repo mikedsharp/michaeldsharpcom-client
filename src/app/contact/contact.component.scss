@@ -1,6 +1,43 @@
 @import '../shared/variables'; 
 @import '../shared/call-to-action'; 
+
+$tagline-box-width: 480px;
+$tagline-primary-heading-size: 60px; 
+$tagline-secondary-heading-size: 32px; 
+
 :host {
     @include ui-view;
     justify-content: space-between;
+
+    .tagline{
+        margin-top: 15%;
+        display: flex; 
+        flex-direction: column;
+        max-width: $tagline-box-width; 
+        align-self: center;
+
+        h1 {
+            margin: 10px 0;
+            font-size: $tagline-primary-heading-size;
+            font-family: $primary-font;
+            color:  #445544;
+            text-shadow: 3px 3px 2px #dcdcdc;
+        }
+
+        h2 {
+            margin: 10px 0;
+            font-family: $secondary-font; 
+            font-size: $tagline-secondary-heading-size;
+            color:  #fff;
+            word-spacing: 2px;
+            text-shadow: 2px 3px 3px #353535;
+            animation: fadein 1.5s;
+        } 
+          
+    }
+     @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
 }
