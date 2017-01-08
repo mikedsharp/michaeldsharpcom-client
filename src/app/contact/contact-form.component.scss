@@ -7,24 +7,23 @@ $tagline-secondary-heading-size: 24px;
 :host {
     .contactForm{
 
+        padding: 5px;
+        max-width: 400px;
+        min-width: 100px;
+        margin: 0 auto;
+
         ::-webkit-input-placeholder{
             font-family: Oswald;
             font-size: 18px;
         }
 
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
         padding: 5px; 
 
         textarea{
             resize: none;
             height: 150px;
         }
-        
-        input{
 
-        }
 
         input, textarea{
             padding: 10px;
@@ -53,7 +52,8 @@ $tagline-secondary-heading-size: 24px;
             min-width: 100px;
             font-family: Oswald;
             font-size: 18px;
-            margin: 10px; 
+            display: block;
+            margin: 0 auto; 
         }
     }
 

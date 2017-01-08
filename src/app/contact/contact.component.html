@@ -8,8 +8,15 @@
 
 <contact-form (formSubmitted)="setSubmitted()"></contact-form>
 
-<div class="tagline">
-    <h2 class="centre" *ngIf="feedbackResponse != null" >Thank you for your feedback</h2>
+<div class="social-media">
+    <h2 class="centre">
+        Alternatively, I can be found on the following sites
+    </h2>
+    <ul>
+        <li><a target="_blank" href="https://www.youtube.com/user/programmerinprogress"><span class="fa fa-linkedin-square"></span></a></li>
+        <li><a target="_blank"  href="https://twitter.com/sharpy23"><span class="fa fa-twitter-square"></span></a></li>
+        <li><a target="_blank"  href="https://uk.linkedin.com/in/mikedsharp"><span class="fa fa-youtube-square"></span></a></li>
+    </ul>
 </div>
 <div class="cta-box" *ngIf="feedbackResponse == null">
     <span>One last thing, how did I do? (honest feedback gets you everywhere!)</span>
@@ -17,8 +24,14 @@
           <a (click)="registerFeedback('like')" draggable="false"  class="mds-fab"><i class="fa fa-thumbs-up"></i></a>
           <a (click)="registerFeedback('dislike')" draggable="false" class="mds-fab"><i class="fa fa-thumbs-down"></i></a>
     </div>
+
+    <div class="tagline" *ngIf="feedbackResponse != null">
+        <h2 class="centre"  >Thank you for your feedback</h2>
+    </div>
 </div>
+
 <div class="cta-box" *ngIf="feedbackResponse != null">
-    <span>Time for one more spin?</span>
+    <span>Thanks for the feedback!</span>
     <a draggable="false" routerLink="/home" class="mds-fab"><i class="fa fa-home"></i></a> 
 </div>
+
