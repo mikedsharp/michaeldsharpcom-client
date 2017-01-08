@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormBuilder, Validators} from '@angular/forms'; 
 import {ContactFormService} from './contact-form.service';
+import {EventEmitter, Output} from '@angular/core';
 
 @Component({
     selector: 'contact-form',
@@ -15,6 +16,7 @@ export class ContactFormComponent implements OnInit {
     contactResponse = null;
     submitted = false; 
     emailRegex = '';
+    @Output() formSubmitted: EventEmitter<any> = new EventEmitter(); 
 
     onValueChanged(data?: any){
         if(!this.formModel){
@@ -25,6 +27,7 @@ export class ContactFormComponent implements OnInit {
 
     onSubmit(){
         this.submitted = true; 
+        this.formSubmitted.emit(null); 
         this.contactFormService
             .submitForm(this.formModel.value)
             .subscribe(this.onResponse, 

@@ -1,13 +1,13 @@
 <h1>Want to find out more? Drop me a message</h1>
-<div>
-    <h2 class="centre">
-        Feel free to contact me using the form below, I'm always 
-        open to discussing projects, improvement suggestions for the site, or 
-        just a friendly message to say hi. 
-    </h2>
-</div>
 
-<contact-form></contact-form>
+<h2 class="centre" *ngIf="!submitted">
+    Feel free to contact me using the form below, I'm always 
+    open to discussing projects, improvement suggestions for the site, or 
+    just a friendly message to say hi. 
+</h2>
+
+<contact-form (formSubmitted)="setSubmitted()"></contact-form>
+
 <div class="tagline">
     <h2 class="centre" *ngIf="feedbackResponse != null" >Thank you for your feedback</h2>
 </div>

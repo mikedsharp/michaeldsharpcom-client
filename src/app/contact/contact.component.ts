@@ -11,6 +11,7 @@ import '../rxjs-operators';
 export class ContactViewComponent implements OnInit {
 
     feedbackResponse = null; 
+    submitted = false; 
 
     registerFeedback(feedback){
         var feedbackResult = feedback == 'like' ? true : false; 
@@ -25,6 +26,9 @@ export class ContactViewComponent implements OnInit {
 
     constructor(private feedbackService: FeedbackService) { }
 
+    setSubmitted(){
+        this.submitted = true;
+    }
     onSuccess(res:any){
         console.log(res); 
     }
