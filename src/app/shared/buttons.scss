@@ -7,6 +7,25 @@
      $fab-button-size: 56px; 
      $fab-icon-size: 15px; 
 
+     .mds-text-button{
+        background-color: #445544;
+        color: #C0DBC7;
+        border: none;
+        padding: 5px;
+        border-radius: 2px;
+
+        &:hover{
+             background-color: $fab-button-bg-colour-hover;
+             text-shadow: 4px 3px 4px $fab-button-flare-colour;
+             cursor: pointer;
+        }
+        &:active{
+             background-color: $fab-button-bg-colour-active;
+                 color: $fab-button-flare-colour;
+                 text-shadow: 2px 1px 3px $fab-button-flare-colour;
+        }
+     }
+
      .mds-fab{
         background-color: $fab-button-bg-colour;
         height: $fab-button-size;

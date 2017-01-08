@@ -1,6 +1,7 @@
-<form class="contactForm" [formGroup]="formModel" (ngSubmit)="onSubmit()">
+<form class="contactForm" [formGroup]="formModel" (ngSubmit)="onSubmit()" *ngIf="!submitted">
     <input placeholder="Name" type="text" formControlName="name" />
     <input placeholder="Your Email" type="email" formControlName="from" />
     <textarea placeholder="Your Message" cols="10"  formControlName="body"></textarea>
-    <button type="submit" [disabled]="!formModel.valid">Submit</button>
+    <button type="submit" class="mds-text-button" [disabled]="!formModel.valid">Submit</button>
 </form>
+<h2 *ngIf="submitted">Thanks for sending me a message, I look forward to reading it!</h2>

@@ -1,3 +1,9 @@
+@import '../shared/variables'; 
+@import '../shared/call-to-action'; 
+
+$tagline-primary-heading-size: 60px; 
+$tagline-secondary-heading-size: 32px; 
+
 :host {
     .contactForm{
 
@@ -17,6 +23,7 @@
         }
         
         input{
+
         }
 
         input, textarea{
@@ -26,11 +33,19 @@
             width:100%;
             max-width: 400px;
             margin: 5px auto;
-            border: none;
+            border: 2px solid transparent;
             display: flex;
             border-radius: 2px;
             padding-left: 10px;
-            padding-top: 5px;          
+            padding-top: 5px;   
+
+            &.ng-touched {
+                &.ng-invalid {
+                    &.ng-dirty{
+                        border: 2px solid red;
+                    }
+                }
+            }       
         }
 
         button {
@@ -38,6 +53,26 @@
             min-width: 100px;
             font-family: Oswald;
             font-size: 18px;
+            margin: 10px; 
         }
     }
+
+    h2 {
+            font-family: $secondary-font; 
+            font-size: $tagline-secondary-heading-size;
+            color:  #fff;
+            word-spacing: 2px;
+            text-shadow: 2px 3px 3px #353535;
+            animation: fadein 1.5s;
+            text-align: center;
+            margin: 0 auto;
+            padding:10px; 
+            max-width: 400px;
+    }
+    
+     @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    } 
+
 }

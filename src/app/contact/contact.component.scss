@@ -9,6 +9,18 @@ $tagline-secondary-heading-size: 32px;
     @include ui-view;
     justify-content: space-between;
 
+    h2{
+         margin: 0 auto;
+         padding: 10px; 
+         font-family: $secondary-font; 
+         font-size: 24px;
+         color:  #fff;
+         word-spacing: 2px;
+         text-shadow: 2px 3px 3px #353535;
+         animation: fadein 1.5s;
+         max-width: 640px; 
+    }
+
     .tagline{
         margin-top: 15%;
         display: flex; 

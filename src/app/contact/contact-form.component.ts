@@ -13,6 +13,8 @@ export class ContactFormComponent implements OnInit {
 
     formModel:FormGroup; 
     contactResponse = null;
+    submitted = false; 
+    emailRegex = '';
 
     onValueChanged(data?: any){
         if(!this.formModel){
@@ -22,18 +24,23 @@ export class ContactFormComponent implements OnInit {
     }
 
     onSubmit(){
+        this.submitted = true; 
         this.contactFormService
             .submitForm(this.formModel.value)
-            .subscribe(response => this.contactResponse = response, 
+            .subscribe(this.onResponse, 
             err => {
                 console.log(err);
             }); 
     }
 
+    onResponse(response){
+        this.contactResponse = response; 
+    }
+
     buildForm(){
         this.formModel = this.fb.group({
             'name' : ['',  Validators.compose([Validators.required])], 
-            'from': ['',  Validators.compose([Validators.required])], 
+            'from': ['', [Validators.required, Validators.pattern('^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$')]], 
             'body': ['',  Validators.compose([Validators.required])], 
         });  
 
