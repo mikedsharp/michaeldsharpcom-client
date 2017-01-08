@@ -64,9 +64,25 @@
             margin: 5px 0;
     }
 
+    h4{
+        font-family: $primary-font;
+        font-size: 1.5em;
+        color: #445544;
+        text-shadow: 1px 1px 1.5px #dcdcdc;
+        margin: 0 auto; 
+        padding-left: 10px;
+    }
+
     p, ul {
             line-height: 24px;
             max-width: 48em;
+            font-weight: 600;
+            padding: 10px;
+    }
+
+    .section{
+        display: block; 
+        margin: 10px auto; 
     }
     
 }
