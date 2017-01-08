@@ -19,6 +19,17 @@ $tagline-secondary-heading-size: 32px;
          text-shadow: 2px 3px 3px #353535;
          animation: fadein 1.5s;
          max-width: 640px; 
+         letter-spacing: 0.02em;
+    }
+
+    
+    h1 {
+            margin: 20px 0;
+            font-size: 30px;
+            font-family: $primary-font;
+            color:  #445544;
+            text-shadow: 3px 3px 2px #dcdcdc;
+            text-align: center;
     }
 
     .tagline{
