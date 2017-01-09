@@ -1,9 +1,9 @@
 <header>
-    <a class="hamburger-button fa fa-bars"></a>
+    <a (click)="toggleHamburger()" class="hamburger-button fa fa-bars"></a>
     <a class="home-icon" routerLink="/home"><img src="../assets/logo-mds-glasses.png"/></a>
 </header>
 <div class="content">
-    <nav-bar></nav-bar>
-    <nav-hamburger></nav-hamburger>
+    <nav-bar ></nav-bar>
+    <nav-hamburger (click)="toggleHamburger()" (onSelection)="toggleHamburger()" *ngIf="showingHamburger"></nav-hamburger>
     <router-outlet></router-outlet>
 </div>

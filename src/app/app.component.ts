@@ -8,8 +8,14 @@ import { Title } from '@angular/platform-browser';
 })
 export class AppComponent {
   title = 'michaeldsharp.com, under development and coming soon!';
-
+  showingHamburger = false; 
+  
   public constructor(private titleService: Title){
     this.titleService.setTitle('Mike D Sharp - Portfolio'); 
+    this.showingHamburger = false; 
+}
+
+  toggleHamburger(){
+    this.showingHamburger = !this.showingHamburger; 
   }
 }
