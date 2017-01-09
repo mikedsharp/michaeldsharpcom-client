@@ -53,6 +53,12 @@
                 cursor:pointer;
             }
 
+            &.active{
+                 .fa, a .hamburger-item-text {
+                    color:#b0c8b6;
+                }
+            }
+
             a {
                     font-size: 32px;
                     width:128px; 
