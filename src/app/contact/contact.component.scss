@@ -1,53 +1,58 @@
-@import '../shared/variables'; 
-@import '../shared/call-to-action'; 
+@import '../shared/variables';
+@import '../shared/call-to-action';
 
 $tagline-box-width: 480px;
-$tagline-primary-heading-size: 60px; 
-$tagline-secondary-heading-size: 32px; 
+$tagline-primary-heading-size: 60px;
+$tagline-secondary-heading-size: 32px;
 
 :host {
     @include ui-view;
     justify-content: space-between;
-    
+
     *{
         box-sizing: border-box;
     }
 
     .cta-box {
-        display: flex; 
+        /*display: flex; */
+        display:block;
         flex-direction: column;
-        padding: 10px; 
+        padding: 10px;
     }
-    padding: 10px; 
+    padding: 10px;
     .social-media{
-        display: flex; 
+        /*display: flex;
         flex-direction: column;
-        padding: 10px; 
+        */
+        display:block;
+        margin: auto auto;
+        padding: 10px;
 
         ul {
             list-style: none;
-            display: block; 
-            margin: 0 auto; 
+            display: block;
+            margin: 0 auto;
             padding: 0;
-            display: flex; 
+            display: flex;
             flex-direction: row;
+            justify-content: center;
             max-width: 480px;
             li{
-                display: flex; 
-                max-width: 128px; 
+                display: flex;
+                max-width: 128px;
                 margin: 10px;
                 text-align: center;
 
                 .fa{
                     font-size: 48px;
-                    color: #445544; 
+                    color: #445544;
 
                     &:hover{
                         color: #556655;
                     }
 
                     &:active{
-                        color: #778877; 
+                        color: #778877;
                     }
                 }
             }
@@ -58,20 +63,21 @@ $tagline-secondary-heading-size: 32px;
 
     h2{
          margin: 0 auto;
-         padding: 10px; 
-         font-family: $secondary-font; 
+         padding: 10px;
+         font-family: $secondary-font;
          font-size: 24px;
          color:  #fff;
          word-spacing: 2px;
          text-shadow: 2px 3px 3px #353535;
          animation: fadein 1.5s;
-         max-width: 640px; 
+         max-width: 640px;
          letter-spacing: 0.02em;
-         display: flex;
-         
+         /*display: flex;*/
+         display: block;
+
     }
 
-    
+
     h1 {
             margin: 20px 0;
             font-size: 30px;
@@ -79,16 +85,18 @@ $tagline-secondary-heading-size: 32px;
             color:  #445544;
             text-shadow: 3px 3px 2px #dcdcdc;
             text-align: center;
-            display: flex;
-            align-self: center;
+            /*display: flex;
+            align-self: center;*/
+            display: block;
     }
 
     .tagline{
         margin-top: 15%;
-        display: flex; 
-        flex-direction: column;
-        max-width: $tagline-box-width; 
-        align-self: center;
+        /*display: flex;*/
+        display: block;
+        /*flex-direction: column;*/
+        max-width: $tagline-box-width;
+      /*  align-self: center;*/
 
         h1 {
             margin: 10px 0;
@@ -100,14 +108,14 @@ $tagline-secondary-heading-size: 32px;
 
         h2 {
             margin: 10px 0;
-            font-family: $secondary-font; 
+            font-family: $secondary-font;
             font-size: 24px;
             color:  #fff;
             word-spacing: 2px;
             text-shadow: 2px 3px 3px #353535;
             animation: fadein 1.5s;
-        } 
-          
+        }
+
     }
      @keyframes fadein {
         from { opacity: 0; }
