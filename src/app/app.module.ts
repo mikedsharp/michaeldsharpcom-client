@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { routing, routedComponents } from './app.routing';
 
 import { NavComponent } from './shared/nav/nav.component'; 
+import {NavHamburgerComponent} from './shared/nav/nav-hamburger.component'; 
 import {ContactFormComponent} from './contact/contact-form.component';
 
 @NgModule({
@@ -15,7 +16,8 @@ import {ContactFormComponent} from './contact/contact-form.component';
     AppComponent, 
     routedComponents, 
     NavComponent, 
-    ContactFormComponent
+    ContactFormComponent, 
+    NavHamburgerComponent
   ],
   imports: [
     BrowserModule,

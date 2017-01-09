@@ -1,0 +1,109 @@
+@import '../variables'; 
+@import '../fonts'; 
+
+:host {
+    
+    position: fixed; 
+    top: 48px;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    background-color: #b0c8b6;
+    z-index: 3;
+
+    @media only screen and (min-width:680px){
+                display: none;
+    
+    }
+
+        ul{
+        width: 100%;
+        padding: 0;
+        list-style-type: none;
+        align-self: center;
+        font-family: 'Oswald'; 
+        margin-left: 0;
+        margin: 0;
+        background-color: #3A423C;
+        li{
+            margin: 0 auto;
+            padding: 20px; 
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover{
+                background-color: #445544;
+                cursor:pointer;
+            }
+
+            a {
+                    font-size: 32px;
+                    width:128px; 
+                    display: flex; 
+
+                    .hamburger-item-text{
+                        width: 65px;
+                        text-align: left;
+                        color:#dcdcdc;
+                    }
+                    
+
+            }
+            .fa{
+                    font-size: 38px;
+                    margin-top: 3px;
+                    color:#dcdcdc;
+            }
+
+            a,.fa{
+                text-decoration: none;
+               
+                transition: color 0.5s ease;
+                &:link{
+                 
+                }
+               
+                &:visited{
+             
+                }
+            }
+            
+             &:hover{
+              
+                       a,.fa {
+                        transition: color 0.5s ease;
+     
+                    }
+             }
+
+             &:active{
+  
+
+                    a,.fa {
+                       
+                    }
+             }
+             
+            a{
+                &.active:not(:hover) {
+                   
+                     .fa{
+                       
+                     }
+                }
+                text-align: right;
+                .fa{
+                    width: 48px;
+                    margin-right: 10px;
+                }
+            }
+           
+             .fa{
+               
+             }
+        }
+    }
+}
+

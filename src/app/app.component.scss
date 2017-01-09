@@ -13,10 +13,26 @@
         width:100%;
         display: flex;
         background-color: black;
-        justify-content: space-around;
-
+       
         a{
             align-self: center; 
+        }
+
+        .home-icon{
+            margin: 0 auto;
+        }
+
+        .hamburger-button {
+            color:white; 
+            margin: 0px 20px;
+            font-size: 20px;
+            margin-bottom: 5px;
+            cursor:pointer;
+            display: flex;
+
+            @media only screen and (min-width:680px){
+                display: none;
+            }
         }
     }
 }
