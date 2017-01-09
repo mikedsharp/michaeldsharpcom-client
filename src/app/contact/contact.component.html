@@ -22,8 +22,8 @@
 <div class="cta-box" *ngIf="feedbackResponse == null">
     <span>One last thing, how did I do? (honest feedback gets you everywhere!)</span>
     <div class="button-pair">
-          <a (click)="registerFeedback('like')" draggable="false"  class="mds-fab"><i class="fa fa-thumbs-up"></i></a>
-          <a (click)="registerFeedback('dislike')" draggable="false" class="mds-fab"><i class="fa fa-thumbs-down"></i></a>
+          <a title="I liked this site" (click)="registerFeedback('like')" draggable="false"  class="mds-fab"><i class="fa fa-thumbs-up"></i></a>
+          <a title="I disliked this site" (click)="registerFeedback('dislike')" draggable="false" class="mds-fab"><i class="fa fa-thumbs-down"></i></a>
     </div>
 
     <div class="tagline" *ngIf="feedbackResponse != null">
