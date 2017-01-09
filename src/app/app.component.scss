@@ -30,6 +30,11 @@
             cursor:pointer;
             display: flex;
 
+            &:hover{
+                color:#dcdcdc;
+            }
+            transition: color 0.25s ease; 
+
             @media only screen and (min-width:680px){
                 display: none;
             }
