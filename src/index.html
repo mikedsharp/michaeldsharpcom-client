@@ -8,21 +8,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
-    app-root{
+    .loadScreen{
       height: 100vh;
       width: 100vw;
-      justify-content: center;
+      position:fixed; 
+      top:0;left:0;right: 0;bottom:0;
+      background-color: #3A423C;
+      z-index: 10;
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    app-root .intro{
+    .loadScreen .intro{
       width:200px;
       display: flex;
       align-self: center;
-    }
-
-    body {
-      background-color: #3A423C;
     }
   </style>
 
@@ -30,7 +31,9 @@
 </head>
 <body>
   <app-root> 
-    <img class="intro" src="../assets/logo-mds-glasses.png" /> 
+    <div class="loadScreen">
+        <img class="intro" src="../assets/logo-mds-glasses.png" /> 
+    </div>
   </app-root>
 </body>
 </html>
