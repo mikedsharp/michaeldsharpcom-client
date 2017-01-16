@@ -19,19 +19,15 @@
         <li><a title="YouTube" target="_blank"  href="https://www.youtube.com/user/programmerinprogress"><span class="fa fa-youtube-square"></span></a></li>
     </ul>
 </div>
-<div class="cta-box" *ngIf="feedbackResponse == null">
+<div class="cta-box" *ngIf="!feedbackSubmitted">
     <span>One last thing, how did I do? (honest feedback gets you everywhere!)</span>
     <div class="button-pair">
           <a title="I liked this site" (click)="registerFeedback('like')" draggable="false"  class="mds-fab"><i class="fa fa-thumbs-up"></i></a>
           <a title="I disliked this site" (click)="registerFeedback('dislike')" draggable="false" class="mds-fab"><i class="fa fa-thumbs-down"></i></a>
     </div>
-
-    <div class="tagline" *ngIf="feedbackResponse != null">
-        <h2 class="centre"  >Thank you for your feedback</h2>
-    </div>
 </div>
 
-<div class="cta-box" *ngIf="feedbackResponse != null">
+<div class="cta-box" *ngIf="feedbackSubmitted">
     <span>Thanks for the feedback!</span>
     <a draggable="false" routerLink="/home" class="mds-fab"><i class="fa fa-home"></i></a> 
 </div>

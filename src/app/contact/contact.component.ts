@@ -12,8 +12,10 @@ export class ContactViewComponent implements OnInit {
 
     feedbackResponse = null; 
     submitted = false; 
+    feedbackSubmitted = false; 
 
     registerFeedback(feedback){
+        this.feedbackSubmitted = true;
         var feedbackResult = feedback == 'like' ? true : false; 
         this.feedbackService
             .registerFeedback(feedbackResult)
