@@ -26,7 +26,7 @@
         text-shadow: 3px 3px 2px #dcdcdc;
         text-align: center; 
         font-size:1.25em;
-        max-width: 270px; 
+        max-width: 320px; 
         margin: 0 auto; 
         margin-bottom: 20px;
 
@@ -78,6 +78,10 @@
             max-width: 48em;
             font-weight: 600;
             padding: 10px;
+
+            li{
+                margin-left: 25px;
+            }
     }
 
     .section{
@@ -85,5 +89,10 @@
         margin: 10px auto; 
     }
     
+    @media screen and (max-width: 799px){
+        h4{
+            text-align: center;
+        }
+    }
 }
 
