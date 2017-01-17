@@ -15,6 +15,18 @@
         margin: 0 auto; 
     }
 
+    h1 {
+                margin: 20px 0;
+                font-size: 30px;
+                font-family: $primary-font;
+                color:  #445544;
+                text-shadow: 3px 3px 2px #dcdcdc;
+                text-align: center;
+                /*display: flex;
+                align-self: center;*/
+                display: block;
+    }
+
     .projects-grid {
          display: flex; 
          flex: 1; 
@@ -28,14 +40,24 @@
 
         .projects-grid-item {
                display: flex; 
-               border: 2px solid black;
                border-collapse: collapse;
-               background-color: blue; 
+               background-color: #3A423C; 
                width: 50%;
                box-sizing: border-box;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                span {
+                        color: #fff;
+                        font-family: "Oswald";
+                        font-size: 18px;
+                        word-spacing: 2px;
+                        text-shadow: 2px 3px 3px #353535;
+                        margin-bottom: 8px;
+                        text-align: center;
+                        letter-spacing: 0.02em;
+                }
         }
     }
 
