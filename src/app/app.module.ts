@@ -10,6 +10,7 @@ import { routing, routedComponents } from './app.routing';
 import { NavComponent } from './shared/nav/nav.component'; 
 import {NavHamburgerComponent} from './shared/nav/nav-hamburger.component'; 
 import {ContactFormComponent} from './contact/contact-form.component';
+import {ProjectTileComponent} from './projects/project-tile.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {ContactFormComponent} from './contact/contact-form.component';
     routedComponents, 
     NavComponent, 
     ContactFormComponent, 
-    NavHamburgerComponent
+    NavHamburgerComponent, 
+    ProjectTileComponent
   ],
   imports: [
     BrowserModule,

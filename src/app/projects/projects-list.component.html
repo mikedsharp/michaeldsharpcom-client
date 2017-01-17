@@ -1,19 +1,7 @@
 <h1>Projects</h1>
 
 <div class="projects-grid">
-    <div class="projects-grid-item">
-           <div><span>Project A</span></div>
-    </div>
-    <div class="projects-grid-item">
-              <div><span>Project B</span></div>
-    </div>   
-    <div class="projects-grid-item">
-           <div><span>Project C</span></div>
-    </div>
-    <div class="projects-grid-item">
-           <div><span>Project D</span></div>
-    </div>
-    
+    <project-tile [projectMetadata]="project" *ngFor="let project of projectListSchema"></project-tile>
 </div>
 
 

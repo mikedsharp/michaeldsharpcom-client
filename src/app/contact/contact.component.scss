@@ -7,6 +7,10 @@ $tagline-secondary-heading-size: 32px;
 
 :host {
     @include ui-view;
+    display: block;
+    margin: 0 auto;
+    max-width: 48em;
+    
     justify-content: space-between;
 
     *{

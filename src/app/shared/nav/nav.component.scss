@@ -9,6 +9,7 @@ $nav-width: 160px;
     background-color: $nav-bar-bg-colour;
     height: 100vh;
     flex-direction: column;
+    width: $nav-width;
 
     @media only screen and (min-width:680px){
          display: flex;
