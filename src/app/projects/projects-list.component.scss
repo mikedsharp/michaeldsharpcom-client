@@ -3,10 +3,83 @@
 
 :host {
     @include ui-view;
+    display: block !important; 
+    box-sizing: border-box;
+    *{
+        box-sizing: border-box;
+    }
     justify-content: space-between;
      .panel {
         padding: 10px;
         display: inline-block;
         margin: 0 auto; 
     }
+
+    .projects-grid {
+         display: flex; 
+         flex: 1; 
+         flex-direction: row;
+         justify-content: flex-start;
+         flex-wrap: wrap;
+         align-content: flex-start;
+         padding: 10px; 
+
+
+        .projects-grid-item {
+               display: flex; 
+               border: 2px solid black;
+               border-collapse: collapse;
+               background-color: blue; 
+               width: 50%;
+               box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+
+                div{
+                    position: absolute;
+                }
+        }
+    }
+
+    .projects-grid-item:after {
+        content: "";
+        display: block;
+    }
+
+     @media only screen and (max-width:679px){
+                 .projects-grid {
+                     .projects-grid-item {
+                           width: 100%;
+                        &:after {
+                            padding-bottom: 100%;
+                        }
+                           overflow:hidden
+                     }
+                 }
+     }
+     @media only screen and (min-width:680px){
+                .projects-grid {
+                    .projects-grid-item {
+                           width: 50%;
+                           &:after{
+                                padding-bottom: 100%;
+                           }
+                           overflow:hidden
+                     }
+                 }
+     }
+     @media only screen and (min-width:1020px){
+                .projects-grid {
+                    .projects-grid-item {
+                           width: 33.3333%;
+                           &:after {
+                                  padding-bottom: 100%;
+                           }
+                           overflow:hidden
+                     }
+                 }
+     }
+  
 }
