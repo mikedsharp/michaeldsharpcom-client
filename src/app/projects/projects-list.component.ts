@@ -9,32 +9,31 @@ export class ProjectsListViewComponent implements OnInit {
     projectListSchema = [
         {
             name: 'Rebound', 
-            url: '', 
+            id: 'rebound', 
             bgImage: '../../assets/macbook-splash.png' 
         }, 
          {
             name: 'MapWork', 
-            url: '', 
+            id: 'mapwork', 
             bgImage: '../../assets/macbook-splash.jpg' 
         },
          {
             name: 'BLOCK', 
-            url: '', 
+            id: 'block', 
             bgImage: '../../assets/macbook-splash.jpg' 
         },
          {
             name: 'Alien Invasion', 
-            url: '', 
+            id: 'alien-invasion', 
             bgImage: '../../assets/macbook-splash.png' 
         },
          {
             name: 'Meteor defence', 
-            url: '', 
+            id: 'meteor-defence', 
             bgImage: '../../assets/macbook-splash.jpg' 
         }
     ]; 
 
     constructor() { }
-
     ngOnInit() { }
 }

@@ -1,7 +1,7 @@
 <h1>Projects</h1>
 
 <div class="projects-grid">
-    <project-tile [projectMetadata]="project" *ngFor="let project of projectListSchema"></project-tile>
+    <project-tile [projectMetadata]="project" routerLink="/projects/{{project.id}}" *ngFor="let project of projectListSchema"></project-tile>
 </div>
 
 
