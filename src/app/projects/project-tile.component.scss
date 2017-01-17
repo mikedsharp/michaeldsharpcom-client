@@ -1,0 +1,93 @@
+:host{
+    display: flex; 
+    border-collapse: collapse;   
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    position:relative;
+
+    .contentOverlay{
+        position: absolute; 
+        top:0;left:0;right:0;bottom:0; 
+        background-color: #445544;;
+        z-index: 9; 
+        opacity: 0;
+        display: block; 
+        transition: opacity 1s; 
+    }
+
+    .contentArea{
+        z-index: 8; 
+        position: absolute;
+        top: 0;right:0;left:0;bottom:0;
+         background-size: cover;
+         display: flex; 
+         justify-content: center;
+         align-items: center;
+      
+
+         
+    }
+
+     span {
+            color: #fff;
+            font-family: "Oswald";
+            font-size: 24px;
+            word-spacing: 2px;
+            text-shadow: 2px 3px 3px #353535;
+            margin-bottom: 8px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            transition: all 1s; 
+            z-index: 10; 
+        }
+
+     transform: scale(1,1);
+
+    &:hover {
+        span{
+            transform: scale(1.5,1.5);
+        }
+
+        .contentOverlay{
+            opacity: 0.7; 
+        }
+    }
+   
+
+     &:after {
+        content: "";
+        display: block;
+    }
+
+     @media only screen and (max-width:679px){
+        width: 100%;
+        &:after {
+            padding-bottom: 75vw;
+        }
+        overflow: hidden;             
+     }
+     @media only screen and (min-width:680px){
+        width: 50%;
+        &:after  {
+            padding-bottom: 35vw;
+        }
+        overflow:hidden;            
+     }
+     @media only screen and (min-width:1020px){
+        width: 33.3333%;
+        &:after  {
+            padding-bottom: 25vw;
+        }
+        overflow:hidden;       
+     }
+}
+
+
+
+
+
+
+   

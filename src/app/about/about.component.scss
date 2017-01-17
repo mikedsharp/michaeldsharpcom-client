@@ -4,6 +4,7 @@
 
 :host {
     @include ui-view;
+    display: block;
     font-family: $copy-font; 
     color: #616161;
     justify-content: space-between;
@@ -21,17 +22,14 @@
     }
 
     .avatar-caption{
-        font-family: "Sansita One"; 
-        color: #445544;
-        text-shadow: 3px 3px 2px #dcdcdc;
         text-align: center; 
         font-size:1.25em;
         max-width: 320px; 
         margin: 0 auto; 
         margin-bottom: 20px;
-
         color: #fff;
         font-family: "Oswald";
+        letter-spacing: 0.04em;
         word-spacing: 2px;
         text-shadow: 2px 3px 3px #353535;
     }
@@ -102,6 +100,7 @@
     .section{
         display: block; 
         margin: 10px auto; 
+        max-width: 48em;
     }
     
     @media screen and (max-width: 799px){

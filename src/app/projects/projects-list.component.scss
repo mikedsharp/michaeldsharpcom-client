@@ -3,10 +3,46 @@
 
 :host {
     @include ui-view;
+    display: block !important; 
+    box-sizing: border-box;
+    *{
+        box-sizing: border-box;
+    }
     justify-content: space-between;
      .panel {
         padding: 10px;
         display: inline-block;
         margin: 0 auto; 
     }
+
+    h1 {
+                margin: 20px 0;
+                font-size: 30px;
+                font-family: $primary-font;
+                color:  #445544;
+                text-shadow: 3px 3px 2px #dcdcdc;
+                text-align: center;
+                /*display: flex;
+                align-self: center;*/
+                display: block;
+    }
+
+    .projects-grid {
+         display: flex; 
+         flex: 1; 
+         flex-direction: row;
+         justify-content: flex-start;
+         flex-wrap: wrap;
+         align-content: flex-start;
+         padding: 10px; 
+         margin: 0 auto;
+    }
+
+     @media only screen and (max-width:679px){
+        .projects-grid {
+            justify-content: center;
+        }
+     }
+
 }
+
