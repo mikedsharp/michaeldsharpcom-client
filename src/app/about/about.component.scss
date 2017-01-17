@@ -4,6 +4,7 @@
 
 :host {
     @include ui-view;
+    display: block;
     font-family: $copy-font; 
     color: #616161;
     justify-content: space-between;
@@ -102,6 +103,7 @@
     .section{
         display: block; 
         margin: 10px auto; 
+        max-width: 48em;
     }
     
     @media screen and (max-width: 799px){
