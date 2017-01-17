@@ -8,29 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class ProjectsListViewComponent implements OnInit {
     projectListSchema = [
         {
-            name: 'Project A', 
+            name: 'Rebound', 
             url: '', 
             bgImage: '../../assets/macbook-splash.png' 
         }, 
          {
-            name: 'Project B', 
+            name: 'MapWork', 
             url: '', 
-            bgImage: '' 
+            bgImage: '../../assets/macbook-splash.jpg' 
         },
          {
-            name: 'Project C', 
+            name: 'BLOCK', 
             url: '', 
-            bgImage: '' 
+            bgImage: '../../assets/macbook-splash.jpg' 
         },
          {
-            name: 'Project D', 
+            name: 'Alien Invasion', 
             url: '', 
-            bgImage: '' 
+            bgImage: '../../assets/macbook-splash.png' 
         },
          {
-            name: 'Project E', 
+            name: 'Meteor defence', 
             url: '', 
-            bgImage: '' 
+            bgImage: '../../assets/macbook-splash.jpg' 
         }
     ]; 
 
