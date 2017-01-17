@@ -15,7 +15,7 @@
         z-index: 9; 
         opacity: 0;
         display: block; 
-        transition: opacity 1s; 
+        transition: opacity 0.5s; 
     }
 
     .contentArea{
@@ -40,7 +40,7 @@
             margin-bottom: 8px;
             text-align: center;
             letter-spacing: 0.02em;
-            transition: all 1s; 
+            transition: all 0.5s; 
             z-index: 10; 
         }
 
