@@ -15,6 +15,10 @@ export class ProjectViewComponent implements OnInit {
     
     constructor(private route: ActivatedRoute, private projects: ProjectService) { }
 
+    openLink(link){
+        window.open(link.url, '_blank'); 
+    }
+
     ngOnInit() { 
         this.paramSubscription = this.route.params.subscribe(params => {
             let id  = params['id']; 
