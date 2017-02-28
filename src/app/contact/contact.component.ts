@@ -35,5 +35,7 @@ export class ContactViewComponent implements OnInit {
         console.log(res); 
     }
 
-    ngOnInit() { }
+    ngOnInit() { 
+        
+    }
 }

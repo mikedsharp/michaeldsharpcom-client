@@ -1,20 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router'; 
+import {ProjectService} from './project.service'; 
 
 @Component({
     templateUrl: 'project.component.html', 
     styleUrls: ['project.component.scss'], 
+    providers: [ProjectService], 
     selector:'project-view'
 })
 export class ProjectViewComponent implements OnInit {
     private paramSubscription: any; 
     private id: string; 
-
-    constructor(private route: ActivatedRoute) { }
+    private project: any;
+    
+    constructor(private route: ActivatedRoute, private projects: ProjectService) { }
 
     ngOnInit() { 
         this.paramSubscription = this.route.params.subscribe(params => {
-            this.id = params['id']; 
+            let id  = params['id']; 
+            this.project = this.projects.getProject(id)[0]; 
         }); 
 
     }

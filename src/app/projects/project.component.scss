@@ -1,6 +1,15 @@
 @import '../shared/variables'; 
+@import '../shared/fonts'; 
 
 :host {
     @include ui-view;
 
+    h1 {
+            font-family: $primary-font;
+            color: #445544;
+            text-shadow: 3px 3px 2px #dcdcdc;
+            font-size:2.5em;
+        }
 }
+
+
