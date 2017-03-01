@@ -1,4 +1,5 @@
-<h1>{{project.name}}</h1>
+<div *ngIf="project != null">
+    <h1>{{project.name}}</h1>
  <h2>A pong/breakout clone with elements of random generation</h2>
 
  <img class="slide" src="{{project.content.slides[0]}}" />
@@ -22,4 +23,5 @@
 <div class="cta-box">
     <span>Back to projects</span>
     <a draggable="false" routerLink="/projects" class="mds-fab"><i class="fa fa-wrench"></i></a>
+</div>
 </div>

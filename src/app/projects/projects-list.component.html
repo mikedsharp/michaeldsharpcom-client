@@ -1,4 +1,4 @@
-<h1>Projects</h1>
+<h1>Projects ({{projectListSchema ? projectListSchema.length : 0}} projects)</h1>
 
 <div class="projects-grid">
     <project-tile [projectMetadata]="project" routerLink="/projects/{{project.id}}" *ngFor="let project of projectListSchema"></project-tile>

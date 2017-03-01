@@ -1,20 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import {ProjectService} from './project.service'; 
+import {Observable} from 'rxjs/Observable'; 
 
 @Component({
     templateUrl: 'projects-list.component.html', 
     styleUrls: ['projects-list.component.scss'], 
-    providers: [ProjectService],
     selector:'project-list-view'
 })
 export class ProjectsListViewComponent implements OnInit {
     
-    projectListSchema:Array<Object>; 
+    projectListSchema:Array<Object> = [];
 
     constructor(private projects:ProjectService) { 
+       
     }
     
     ngOnInit() {
-        this.projectListSchema = this.projects.getProjects();     
+         this.projects.getProjects()
+         .subscribe(data => this.projectListSchema = data);
+    
     }
 }
