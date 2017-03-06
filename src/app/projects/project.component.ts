@@ -12,8 +12,11 @@ export class ProjectViewComponent implements OnInit {
     private paramSubscription: any; 
     private id: string; 
     private project: any = null; 
+    private baseScreenshotUrl:string; 
     
-    constructor(private route: ActivatedRoute, private projects: ProjectService) { }
+    constructor(private route: ActivatedRoute, private projects: ProjectService) { 
+        this.baseScreenshotUrl = 'https://s3-eu-west-1.amazonaws.com/michaeldsharp.com/assets/thumbs'; 
+    }
 
     openLink(link){
         window.open(link.url, '_blank'); 

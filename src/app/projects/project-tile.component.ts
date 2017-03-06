@@ -8,8 +8,11 @@ import {Input} from '@angular/core';
 })
 export class ProjectTileComponent implements OnInit {
     @Input() projectMetadata; 
+    thumbnailBaseUrl:String; 
     
-    constructor() { }
+    constructor() { 
+        this.thumbnailBaseUrl = 'https://s3-eu-west-1.amazonaws.com/michaeldsharp.com/assets/thumbs'; 
+    }
 
     ngOnInit() { }
 }
