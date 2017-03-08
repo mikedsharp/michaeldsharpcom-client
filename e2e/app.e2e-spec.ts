@@ -1,10 +1,10 @@
-import { MichaeldsharpcomClientPage } from './app.po';
+import { FuckingWorkPage } from './app.po';
 
-describe('michaeldsharpcom-client App', function() {
-  let page: MichaeldsharpcomClientPage;
+describe('fucking-work App', () => {
+  let page: FuckingWorkPage;
 
   beforeEach(() => {
-    page = new MichaeldsharpcomClientPage();
+    page = new FuckingWorkPage();
   });
 
   it('should display message saying app works', () => {

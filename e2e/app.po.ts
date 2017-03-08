@@ -1,6 +1,6 @@
-import { browser, element, by } from 'protractor/globals';
+import { browser, element, by } from 'protractor';
 
-export class MichaeldsharpcomClientPage {
+export class FuckingWorkPage {
   navigateTo() {
     return browser.get('/');
   }
