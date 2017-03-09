@@ -8,7 +8,7 @@ export class ProjectService {
 
     constructor(private http:Http) { }
 
-    server = 'http://localhost:3000'; 
+    server = 'http://api.michaeldsharp.com'; 
     endpoint = '/projects'; 
 
     projects: Array<any>; 
