@@ -10,7 +10,7 @@
     justify-content: space-between;
 
     .avatar{
-        background: url('../../assets/avatar.png') no-repeat; 
+        background: url('https://s3-eu-west-1.amazonaws.com/michaeldsharp.com/assets/profile-pic.jpg') no-repeat; 
         width: 162px;
         min-height: 162px; 
         margin: 0 auto; 
@@ -19,18 +19,19 @@
         display: flex;
         box-shadow: 2px 3px 3px #3b3b3b;
         margin-bottom: 10px;
+        background-size:  contain;
     }
 
     .avatar-caption{
         text-align: center; 
         font-size:1.25em;
-        max-width: 320px; 
+        max-width: 480px; 
         margin: 0 auto; 
         margin-bottom: 20px;
         color: #fff;
         font-family: "Oswald";
         letter-spacing: 0.04em;
-        word-spacing: 2px;
+        word-spacing: 0px;
         text-shadow: 2px 3px 3px #353535;
     }
 
