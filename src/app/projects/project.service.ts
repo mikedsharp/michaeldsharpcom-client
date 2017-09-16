@@ -8,7 +8,7 @@ export class ProjectService {
 
     constructor(private http:Http) { }
 
-    server = 'http://api.michaeldsharp.com'; 
+    server = 'http://michaeldsharpcom-api.herokuapp.com'; 
     endpoint = '/projects'; 
 
     projects: Array<any>; 
