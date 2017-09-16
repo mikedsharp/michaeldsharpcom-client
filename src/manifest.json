@@ -1,0 +1,37 @@
+{
+    "name": "Michael D Sharp - Portfolio",
+    "short_name": "MDS",
+    "display": "standalone",
+    "background_color": "#3A423C", 
+    "theme_color": "#000",
+    "dir": "rtl",
+    "lang": "en-gb",
+    "orientation": "any",
+    "start_url": ".",
+    "description": "The portfolio of Michael D Sharp, welcome!",
+    "icons": [{
+        "src": "assets/icons/icon_512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    },
+    {
+        "src": "assets/icons/icon_256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+    },
+    {
+        "src": "assets/icons/icon_128x128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    },
+    {
+        "src": "assets/icons/icon_64x64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+    },
+    {
+        "src": "assets/icons/icon_32x32.png",
+        "sizes": "32x32",
+        "type": "image/png"
+    }]
+}
