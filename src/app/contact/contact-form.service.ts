@@ -5,7 +5,7 @@ import {ContactFormData} from './contact-form-data';
 @Injectable()
 export class ContactFormService {
 
-    domain = 'http://api.michaeldsharp.com'; 
+    domain = 'http://michaeldsharpcom-api.herokuapp.com'; 
     endpoint = '/contact'; 
 
     constructor(private http:Http) { 
