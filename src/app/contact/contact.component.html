@@ -1,34 +1,74 @@
 <h1>Want to find out more? Drop me a message</h1>
 
-<h2 class="section centre" *ngIf="!submitted">
+<!-- <h2 class="section centre" *ngIf="!submitted">
     Feel free to contact me using the form below, I'm always 
     open to discussing projects, improvement suggestions for the site, or 
     just a friendly message to say hi. 
+</h2> -->
+<h2 class="section centre">
+  The email form has been temporarily disabled for maintenance, but please check
+  feel free to contact me through the channels below
 </h2>
-
-<contact-form (formSubmitted)="setSubmitted()"></contact-form>
+<!-- <contact-form (formSubmitted)="setSubmitted()"></contact-form> -->
 
 <div class="social-media">
-    <h2 class="centre">
-        Alternatively, I can be found on the following sites
-    </h2>
-    <ul>
-        <li><a title="LinkedIn" target="_blank" href="https://uk.linkedin.com/in/mikedsharp"><span class="fa fa-linkedin-square"></span></a></li>
-        <li><a title="Twitter" target="_blank"  href="https://twitter.com/sharpy23"><span class="fa fa-twitter-square"></span></a></li>
-        <li><a title="GitHub" target="_blank"  href="http://github.com/programmerinprogress"><span class="fa fa-github"></span></a></li>
-        <li><a title="YouTube" target="_blank"  href="https://www.youtube.com/user/programmerinprogress"><span class="fa fa-youtube-square"></span></a></li>
-    </ul>
+  <ul>
+    <li>
+      <a
+        title="LinkedIn"
+        target="_blank"
+        href="https://uk.linkedin.com/in/mikedsharp"
+        ><span class="fa fa-linkedin-square"></span
+      ></a>
+    </li>
+    <li>
+      <a title="Twitter" target="_blank" href="https://twitter.com/sharpy23"
+        ><span class="fa fa-twitter-square"></span
+      ></a>
+    </li>
+    <li>
+      <a
+        title="GitHub"
+        target="_blank"
+        href="http://github.com/programmerinprogress"
+        ><span class="fa fa-github"></span
+      ></a>
+    </li>
+    <li>
+      <a
+        title="YouTube"
+        target="_blank"
+        href="https://www.youtube.com/user/programmerinprogress"
+        ><span class="fa fa-youtube-square"></span
+      ></a>
+    </li>
+  </ul>
 </div>
-<div class="cta-box" *ngIf="!feedbackSubmitted">
-    <span>One last thing, how did I do? (honest feedback gets you everywhere!)</span>
-    <div class="button-pair">
-          <a title="I liked this site" (click)="registerFeedback('like')" draggable="false"  class="mds-fab"><i class="fa fa-thumbs-up"></i></a>
-          <a title="I disliked this site" (click)="registerFeedback('dislike')" draggable="false" class="mds-fab"><i class="fa fa-thumbs-down"></i></a>
-    </div>
-</div>
+<!-- <div class="cta-box" *ngIf="!feedbackSubmitted">
+  <span
+    >One last thing, how did I do? (honest feedback gets you everywhere!)</span
+  >
+  <div class="button-pair">
+    <a
+      title="I liked this site"
+      (click)="registerFeedback('like')"
+      draggable="false"
+      class="mds-fab"
+      ><i class="fa fa-thumbs-up"></i
+    ></a>
+    <a
+      title="I disliked this site"
+      (click)="registerFeedback('dislike')"
+      draggable="false"
+      class="mds-fab"
+      ><i class="fa fa-thumbs-down"></i
+    ></a>
+  </div>
+</div> -->
 
 <div class="cta-box" *ngIf="feedbackSubmitted">
-    <span>Thanks for the feedback!</span>
-    <a draggable="false" routerLink="/home" class="mds-fab"><i class="fa fa-home"></i></a> 
+  <span>Thanks for the feedback!</span>
+  <a draggable="false" routerLink="/home" class="mds-fab"
+    ><i class="fa fa-home"></i
+  ></a>
 </div>
-
