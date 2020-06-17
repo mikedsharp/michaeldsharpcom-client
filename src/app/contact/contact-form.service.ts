@@ -5,8 +5,8 @@ import {ContactFormData} from './contact-form-data';
 @Injectable()
 export class ContactFormService {
 
-    domain = 'http://api.michaeldsharp.com';
-    endpoint = '/contact';
+    domain = 'https://p24zg9jpwh.execute-api.eu-west-1.amazonaws.com';
+    endpoint = '/default/contact';
 
     constructor(private http: Http) {
     }

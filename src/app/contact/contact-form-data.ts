@@ -1,5 +1,7 @@
 export class ContactFormData {
-    name: string; 
-    from: string; 
-    body: string; 
+  originSite: string;
+  subject: string;
+  name: string;
+  from: string;
+  body: string;
 }
