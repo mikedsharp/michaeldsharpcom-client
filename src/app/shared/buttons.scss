@@ -1,69 +1,69 @@
-     $fab-button-bg-colour: #445544;
-     $fab-button-bg-colour-hover: #556655;
-     $fab-button-bg-colour-active: #778877;
-     $fab-button-icon-colour: #C0DBC7;
-     $fab-button-icon-colour-active: #A9CAB6;
-     $fab-button-flare-colour: #353535;
-     $fab-button-size: 56px; 
-     $fab-icon-size: 15px; 
+$fab-button-bg-colour: #224522;
+$fab-button-bg-colour-hover: #556655;
+$fab-button-bg-colour-active: #778877;
+$fab-button-icon-colour: #c0dbc7;
+$fab-button-icon-colour-active: #a9cab6;
+$fab-button-flare-colour: #353535;
+$fab-button-size: 56px;
+$fab-icon-size: 15px;
 
-     .mds-text-button{
-        background-color: #445544;
-        color: #C0DBC7;
-        border: none;
-        padding: 5px;
-        border-radius: 2px;
-        text-shadow: 2px 3px 3px #353535;
+.mds-text-button {
+  background-color: #224522;
+  color: #c0dbc7;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  text-shadow: 2px 3px 3px #353535;
 
-        &:hover{
-             background-color: $fab-button-bg-colour-hover;
-             text-shadow: 4px 3px 4px $fab-button-flare-colour;
-             cursor: pointer;
-        }
-        &:active{
-             background-color: $fab-button-bg-colour-active;
-             color: $fab-button-flare-colour;
-             text-shadow: 2px 1px 3px $fab-button-flare-colour;
-        }
-     }
+  &:hover {
+    background-color: $fab-button-bg-colour-hover;
+    text-shadow: 4px 3px 4px $fab-button-flare-colour;
+    cursor: pointer;
+  }
+  &:active {
+    background-color: $fab-button-bg-colour-active;
+    color: $fab-button-flare-colour;
+    text-shadow: 2px 1px 3px $fab-button-flare-colour;
+  }
+}
 
-     .mds-fab{
-        background-color: $fab-button-bg-colour;
-        height: $fab-button-size;
-        width:  $fab-button-size; 
-        border-radius: 50%; 
-        display: inline-block;
-        text-decoration: none; 
-        text-shadow: 2px 1px 3px $fab-button-flare-colour;
-        justify-content: center;
-        transition: background-color 0.25s ease-in;
-        box-shadow: 2px 3px 3px $fab-button-flare-colour;
-        
-        .fa{
-                transition: text-shadow 0.5s ease;
-                text-shadow: 4px 3px 4px $fab-button-flare-colour;
-                font-size: $fab-icon-size; 
-                display: flex; 
-                align-self: center;
-                line-height: $fab-button-size;
-                color:  $fab-button-icon-colour;
+.mds-fab {
+  background-color: $fab-button-bg-colour;
+  height: $fab-button-size;
+  width: $fab-button-size;
+  border-radius: 50%;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 2px 1px 3px $fab-button-flare-colour;
+  justify-content: center;
+  transition: background-color 0.25s ease-in;
+  box-shadow: 2px 3px 3px $fab-button-flare-colour;
 
-                &:before {
-                    margin: 0 auto;
-                }
-        }
+  .fa {
+    transition: text-shadow 0.5s ease;
+    text-shadow: 4px 3px 4px $fab-button-flare-colour;
+    font-size: $fab-icon-size;
+    display: flex;
+    align-self: center;
+    line-height: $fab-button-size;
+    color: $fab-button-icon-colour;
 
-        &:hover{
-             background-color: $fab-button-bg-colour-hover;
-             .fa{
-                 text-shadow: 4px 3px 4px $fab-button-flare-colour;
-             }
-        }
-        &:active{
-             background-color: $fab-button-bg-colour-active;
-             .fa{
-                 color: $fab-button-flare-colour;
-                 text-shadow: 2px 1px 3px $fab-button-flare-colour;
-             }
-        }
+    &:before {
+      margin: 0 auto;
     }
+  }
+
+  &:hover {
+    background-color: $fab-button-bg-colour-hover;
+    .fa {
+      text-shadow: 4px 3px 4px $fab-button-flare-colour;
+    }
+  }
+  &:active {
+    background-color: $fab-button-bg-colour-active;
+    .fa {
+      color: $fab-button-flare-colour;
+      text-shadow: 2px 1px 3px $fab-button-flare-colour;
+    }
+  }
+}

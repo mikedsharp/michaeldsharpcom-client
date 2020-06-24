@@ -1,121 +1,119 @@
-@import '../shared/variables'; 
-@import '../shared/fonts'; 
-@import '../shared/call-to-action'; 
+@import "../shared/variables";
+@import "../shared/fonts";
+@import "../shared/call-to-action";
 
 :host {
-    @include ui-view;
+  @include ui-view;
+  display: block;
+  font-family: $copy-font;
+  color: #1c1c1c;
+  justify-content: space-between;
+
+  .avatar {
+    background: url("https://s3-eu-west-1.amazonaws.com/michaeldsharp.com/assets/profile-pic.jpg")
+      no-repeat;
+    width: 162px;
+    min-height: 162px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: #effefb solid 4px;
+    display: flex;
+    box-shadow: 2px 3px 3px #3b3b3b;
+    margin-bottom: 10px;
+    background-size: contain;
+  }
+
+  .avatar-caption {
+    text-align: center;
+    font-size: 1.4em;
+    max-width: 580px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #1a2f00;
+    font-family: "Oswald";
+    font-weight: 600;
+  }
+
+  .container {
+    display: flex;
+  }
+  .panel {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 50px 75px 80px;
+    background-color: #effefb;
+
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: $primary-font;
+    color: #224522;
+    text-shadow: 3px 3px 2px #dcdcdc;
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-family: "Noto Sans";
+    color: #000;
+    font-size: 28px;
+    word-spacing: 2px;
+    margin: 5px 0;
+  }
+
+  h4 {
+    font-family: $primary-font;
+    font-size: 1.5em;
+    color: #224522;
+    text-shadow: 1px 1px 1.5px #dcdcdc;
+    margin: 0 auto;
+    padding-left: 10px;
+  }
+
+  p,
+  ul {
+    line-height: 24px;
+    max-width: 48em;
+    font-weight: 600;
+    padding: 10px;
+
+    li {
+      margin-left: 25px;
+    }
+  }
+
+  a {
+    font-weight: 900;
+    &:link,
+    &:visited {
+      color: #224522;
+    }
+
+    &:hover {
+      color: #eee;
+    }
+
+    &:active {
+      color: #c0dbc7;
+    }
+  }
+
+  .section {
     display: block;
-    font-family: $copy-font; 
-    color: #616161;
-    justify-content: space-between;
+    margin: 10px auto;
+    max-width: 48em;
+  }
 
-    .avatar{
-        background: url('https://s3-eu-west-1.amazonaws.com/michaeldsharp.com/assets/profile-pic.jpg') no-repeat; 
-        width: 162px;
-        min-height: 162px; 
-        margin: 0 auto; 
-        border-radius: 50%;
-        border: #effefb solid 4px;
-        display: flex;
-        box-shadow: 2px 3px 3px #3b3b3b;
-        margin-bottom: 10px;
-        background-size:  contain;
+  @media screen and (max-width: 799px) {
+    h4 {
+      text-align: center;
+      max-width: 485px;
     }
+  }
 
-    .avatar-caption{
-        text-align: center; 
-        font-size:1.25em;
-        max-width: 480px; 
-        margin: 0 auto; 
-        margin-bottom: 20px;
-        color: #fff;
-        font-family: "Oswald";
-        letter-spacing: 0.04em;
-        word-spacing: 0px;
-        text-shadow: 2px 3px 3px #353535;
+  @media screen and (max-width: 480px) {
+    h4 {
+      max-width: 320px;
     }
-
-    .container {
-        display: flex;
-    }
-    .panel {
-        display: inline-block; 
-        margin: 0 auto; 
-        padding: 50px 75px 80px;
-        background-color: #effefb; 
-        
-        margin-bottom: 20px;
-
-    }
-    h1{
-        font-family: $primary-font;
-        color: #445544;
-        text-shadow: 3px 3px 2px #dcdcdc;
-        font-size:2.5em;
-        
-    }
-
-    h3{
-            font-family: 'Noto Sans'; 
-            color:  #000;
-            font-size: 28px;
-            word-spacing: 2px;
-            margin: 5px 0;
-    }
-
-    h4{
-        font-family: $primary-font;
-        font-size: 1.5em;
-        color: #445544;
-        text-shadow: 1px 1px 1.5px #dcdcdc;
-        margin: 0 auto; 
-        padding-left: 10px;
-    }
-
-    p, ul {
-            line-height: 24px;
-            max-width: 48em;
-            font-weight: 600;
-            padding: 10px;
-
-            li{
-                margin-left: 25px;
-            }
-    }
-
-    a{
-        font-weight: 900;
-        &:link, &:visited{
-            color: #445544;
-        }
-
-        &:hover {
-            color:#eee;
-        }
-
-        &:active{
-            color: #C0DBC7;    
-        }
-    }
-
-    .section{
-        display: block; 
-        margin: 10px auto; 
-        max-width: 48em;
-    }
-    
-    @media screen and (max-width: 799px){
-        h4{
-            text-align: center;
-            max-width: 485px; 
-            
-        }
-    }
-
-    @media screen and (max-width: 480px){
-        h4{
-             max-width: 320px; 
-        }
-    }
+  }
 }
-
