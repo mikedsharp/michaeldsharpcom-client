@@ -1,13 +1,16 @@
 <h1>Projects</h1>
 
 <div class="projects-grid">
-    <project-tile [projectMetadata]="project" routerLink="/projects/{{project.id}}" *ngFor="let project of projectListSchema"></project-tile>
+  <project-tile
+    [projectMetadata]="project"
+    routerLink="/projects/{{ project.id }}"
+    *ngFor="let project of projectListSchema"
+  ></project-tile>
 </div>
-
 
 <div class="cta-box">
-    <span>Want to find out more? Drop me a message!</span>
-    <a draggable="false" routerLink="/contact" class="mds-fab"><i class="fa fa-chevron-down"></i></a>
-    
+  <span>Want to find out more? Drop me a message!</span>
+  <a draggable="false" routerLink="/contact" class="mds-fab"
+    ><i class="fa fa-chevron-down"></i
+  ></a>
 </div>
-

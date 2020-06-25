@@ -1,41 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html style="background-color: #b0c8b6;">
-<head>
-  <meta charset="utf-8">
-  <title>MichaeldsharpcomClient</title>
-  <base href="/">
+  <head>
+    <meta charset="utf-8" />
+    <title>MichaeldsharpcomClient</title>
+    <base href="/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="manifest" href="/manifest.json">
-  <style>
-    .loadScreen{
-      height: 100vh;
-      width: 100vw;
-      position:fixed; 
-      top:0;left:0;right: 0;bottom:0;
-      background-color: #3A423C;
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <style>
+      .loadScreen {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #3a423c;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-    .loadScreen .intro{
-      width:200px;
-      display: flex;
-      align-self: center;
-    }
-  </style>
-
-
-</head>
-<body>
-  <app-root> 
-    <div class="loadScreen" *ngIf="loading">
-        <img class="intro" src="../assets/logo-mds-glasses.png" /> 
-    </div>
-  </app-root>
-</body>
+      .loadScreen .intro {
+        width: 200px;
+        display: flex;
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <app-root>
+      <div class="loadScreen" *ngIf="loading">
+        <img class="intro" src="../assets/logo-mds-glasses.png" />
+      </div>
+    </app-root>
+  </body>
 </html>
-   
