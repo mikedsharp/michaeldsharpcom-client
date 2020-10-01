@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'; 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -26,8 +25,7 @@ import {ProjectTileComponent} from './projects/project-tile.component';
     FormsModule,
     HttpModule, 
     routing, 
-    ReactiveFormsModule,
-    Angular2FontawesomeModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
