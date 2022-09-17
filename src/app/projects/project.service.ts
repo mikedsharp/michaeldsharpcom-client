@@ -1,7 +1,12 @@
+declare var require: any
 import { Injectable } from "@angular/core";
 import { Http, Response, Headers } from "@angular/http";
 import "rxjs/Rx";
 import { Observable } from "rxjs/Observable";
+
+const projects = require('../../projects/projects.json');
+
+debugger;
 
 @Injectable()
 export class ProjectService {
@@ -12,14 +17,7 @@ export class ProjectService {
   projects: Array<any>;
 
   getProjects(): Observable<any> {
-    if (this.projects && this.projects.length > 0) {
-      return Observable.of(this.projects);
-    } else {
-      var that = this;
-      return this.http
-        .get(this.server + this.endpoint)
-        .map((res) => (that.projects = res.json().data.projects));
-    }
+    return Observable.of(projects.data.projects);
   }
 
   parseProjects(data) {
