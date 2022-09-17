@@ -5,9 +5,8 @@ import { Observable } from "rxjs/Observable";
 
 @Injectable()
 export class ProjectService {
-  constructor(private http: Http) {}
-
-  server = "https://michaeldsharp.com";
+  constructor(private http: Http) { }
+  server = "https://s3.eu-west-1.amazonaws.com/michaeldsharp.com";
   endpoint = "/projects/projects.json";
 
   projects: Array<any>;
