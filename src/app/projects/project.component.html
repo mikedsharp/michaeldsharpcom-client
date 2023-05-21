@@ -1,27 +1,38 @@
 <div *ngIf="project != null">
-    <h1>{{project.name}}</h1>
- <h2>{{project.content.subHeading}}</h2>
+  <h1>{{ project.name }}</h1>
+  <h2>{{ project.content.subHeading }}</h2>
 
- <img class="slide" src="{{ baseScreenshotUrl + '/' + project.content.slides[0]}}" />
+  <img
+    *ngIf="project.content.slides && project.content.slides > 0"
+    class="slide"
+    src="{{ baseScreenshotUrl + '/' + project.content.slides[0] }}"
+  />
 
-
-<div class="section">
+  <div class="section">
     <h4>About this project</h4>
     <p *ngFor="let paras of project.content.paragraphs">
-        {{paras}}
+      {{ paras }}
     </p>
-  
-</div>
+  </div>
 
-<div class="section links" *ngIf="project.content.links && project.content.links.length > 0">
-     <h4>Links</h4>
-      <ul>
-        <li *ngFor="let link of project.content.links" ><button type="button" (click)="openLink(link)" class="mds-text-button">{{link.text}}</button></li>
+  <div
+    class="section links"
+    *ngIf="project.content.links && project.content.links.length > 0"
+  >
+    <h4>Links</h4>
+    <ul>
+      <li *ngFor="let link of project.content.links">
+        <button type="button" (click)="openLink(link)" class="mds-text-button">
+          {{ link.text }}
+        </button>
+      </li>
     </ul>
-</div>
+  </div>
 
-<div class="cta-box">
+  <div class="cta-box">
     <span>Back to projects</span>
-    <a draggable="false" routerLink="/projects" class="mds-fab"><i class="fa fa-wrench"></i></a>
-</div>
+    <a draggable="false" routerLink="/projects" class="mds-fab"
+      ><i class="fa fa-wrench"></i
+    ></a>
+  </div>
 </div>
