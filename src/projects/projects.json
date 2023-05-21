@@ -2,6 +2,28 @@
   "data": {
     "projects": [
       {
+        "name": "Soundboard",
+        "id": "soundboard",
+        "content": {
+          "slides": [],
+          "subHeading": "A pong/breakout clone with elements of random generation",
+          "paragraphs": [
+            "I made a software soundboard app in React with a NodeJS listener that allows you to trigger sounds on your local machine.",
+            "The project makes use of Socket.io to communicate between client and listener."
+          ],
+          "links": [
+            {
+              "url": "https://github.com/programmerinprogress/soundboard-client",
+              "text": "Client repository"
+            },
+            {
+              "url": "https://github.com/programmerinprogress/soundboard-listener",
+              "text": "Listener Repository"
+            }
+          ]
+        }
+      },
+      {
         "name": "Rebound",
         "id": "rebound",
         "bgImage": "rebound-thumb.png",
@@ -103,6 +125,29 @@
             "The game only took a couple of weekends to complete because it used existing engine code I had written during other projects."
           ],
           "links": []
+        }
+      },
+      {
+        "name": "Mike gone vinyl",
+        "id": "mike-gone-vinyl",
+        "bgImage": "meteor_defence-thumb.png",
+        "content": {
+          "slides": ["meteor_defence-screenshot-1.png"],
+          "subHeading": "Curating my vinyl collection into a Svelte app, just for fun.",
+          "paragraphs": [
+            "I just wanted to play with CSS animations and to see how easy it would be to take pictures of my vinyl sleeves and records and turn them into digital assets.",
+            "I'm happy with the results and it was good fun to make!"
+          ],
+          "links": [
+            {
+              "url": "https://mikegonevinyl.michaeldsharp.com/",
+              "text": "Live site"
+            },
+            {
+              "url": "https://github.com/programmerinprogress/mikes-gone-vinyl",
+              "text": "Source"
+            }
+          ]
         }
       }
     ]
