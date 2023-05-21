@@ -6,7 +6,8 @@
         "id": "soundboard",
         "content": {
           "slides": [],
-          "subHeading": "A pong/breakout clone with elements of random generation",
+          "bgImage": "rebound-thumb.png",
+          "subHeading": "A React-based soundboard app with customisable sounds and themes.",
           "paragraphs": [
             "I made a software soundboard app in React with a NodeJS listener that allows you to trigger sounds on your local machine.",
             "The project makes use of Socket.io to communicate between client and listener."
